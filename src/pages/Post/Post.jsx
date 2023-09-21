@@ -59,7 +59,7 @@ const Post = () => {
           {post?.imgs?.length > 1 ? (
             <Slider images={post?.imgs} />
           ) : (
-            post?.imgs && <img src={post.imgs[0]} alt="" />
+            post?.imgs && <img src={post?.imgs[0]} alt="" />
           )}
           <div className="heading">
             <h2>{post?.title}</h2>

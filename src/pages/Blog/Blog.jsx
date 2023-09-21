@@ -48,14 +48,14 @@ const Blog = () => {
       </div>
       <div className="bottom">
         <div className="blogContainer">
-          {filteredPosts.map((post) => (
-            <Link key={post._id} to={`/blog/${post._id}`}>
+          {filteredPosts?.map((post) => (
+            <Link key={post?._id} to={`/blog/${post?._id}`}>
               <div className="blogItem">
                 <img src={post?.imgs[0]} alt="" />
                 <span className="title">{truncateString(post?.title, 30)}</span>
                 <span className="body">{truncateString(post?.body, 100)}</span>
                 <div className="utils">
-                  <span className="left">24 December | 7 min read</span>
+                  <span className="left">{post?.updatedAt?.slice(0, 10)} | 7 min read</span>
                   {/* <div className="right">
                   <ThumbUpOutlinedIcon className="icon" />
                   <ChatBubbleOutlineOutlinedIcon className="icon" />
