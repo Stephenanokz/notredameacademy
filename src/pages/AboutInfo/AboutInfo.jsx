@@ -65,7 +65,7 @@ const AboutInfo = () => {
         </div>
         <div className="schoolInfo">
           <div className="images">
-            <span className="title">About Verbum Academy</span>
+            <span className="title">About Notre Dame Academy</span>
             <div className="imgsContainer">
               <div className="imgLg">
                 <img src="img/s1.png" alt="" />

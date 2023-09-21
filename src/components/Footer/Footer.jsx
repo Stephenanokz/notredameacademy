@@ -13,10 +13,7 @@ const Footer = () => {
       <div className="top">
         <div className="left">
           <div className="title">
-            <img
-              src="img/logo.png"
-              alt="logo"
-            />
+            <img src="img/logo.png" alt="logo" />
             <span>Notre Dame Academy</span>
           </div>
           <div className="newsletter">
@@ -86,7 +83,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom">
-        <span> &copy; 2023 Verbum . All Right Reserved</span>
+        <span>
+          {" "}
+          <a href="https://notredameacademyadmin.onrender.com/" target="_blank">
+            &copy;
+          </a>{" "}
+          2023 Notre Dame De Namur . All Right Reserved
+        </span>
         <span>Developed by Verbum Networks, Enugu.</span>
       </div>
     </div>
